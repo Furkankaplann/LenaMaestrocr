@@ -49,7 +49,9 @@ const BlogListScreen = () => {
   }
 
   if (error) {
-    return <Text style={BlogListScreenStyle.error}>An error occurred: {error}</Text>;
+    return (
+      <Text style={BlogListScreenStyle.error}>An error occurred: {error}</Text>
+    );
   }
 
   return (
@@ -64,7 +66,7 @@ const BlogListScreen = () => {
             onRefresh={refreshBlogPosts}
           />
         }
-        onEndReached={handleScrollEnd} 
+        onEndReached={handleScrollEnd}
         onEndReachedThreshold={0.5}
         contentContainerStyle={{justifyContent: 'center'}}
       />

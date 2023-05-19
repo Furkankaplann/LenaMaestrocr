@@ -31,7 +31,7 @@ export const BlogProvider = ({children}) => {
 
   const refreshBlogPosts = () => {
     console.log('pull to refresh');
-    setRefreshing(true); // pull to refresh eventıyla geldiğini ifade eder
+    setRefreshing(true); 
     setPage(page + 1);
   };
 
